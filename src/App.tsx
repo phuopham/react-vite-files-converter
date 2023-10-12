@@ -8,9 +8,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <Home />
-      <main className="pt-16 min-h-screen lg:pt-36 2xl:pt-44 container max-w-4xl lg:max-w-6xl 2xl:max-w-7xl">
+      <main className="pt-16 min-h-screen lg:pt-36 container m-auto">
+        <Home />
         <Dropzone />
+        <div className="mt-16 pb-2 text-center text-sm text-slate-400">
+          @2023 Created by Phuopham.com
+        </div>
       </main>
       <Toaster />
     </>

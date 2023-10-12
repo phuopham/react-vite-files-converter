@@ -1,5 +1,5 @@
 import { FiUploadCloud } from "react-icons/fi";
-import { LuFileSymlink } from "react-icons/lu";
+import { LuFilePlus2, LuFileSymlink } from "react-icons/lu";
 import { MdClose } from "react-icons/md";
 import ReactDropzone from "react-dropzone";
 import bytesToSize from "@/utils/bytes-to-size";
@@ -25,6 +25,7 @@ import { Button } from "./ui/button";
 import loadFfmpeg from "@/utils/load-ffmpeg";
 import type { Action } from "@/types";
 import { FFmpeg } from "@ffmpeg/ffmpeg";
+import { AiOutlineFileAdd } from "react-icons/ai";
 
 export const extensions = {
   image: [
@@ -232,7 +233,7 @@ export default function Dropzone() {
               <Skeleton className="h-full w-full -ml-10 cursor-progress absolute rounded-xl" />
             )}
             <div className="flex gap-4 items-center">
-              <span className="text-xl text-green-600">
+              <span className="text-xl text-emerald-600">
                 {fileToIcon(action.file_type)}
               </span>
               <div className="flex items-center gap-1 w-96">
@@ -443,7 +444,7 @@ export default function Dropzone() {
             ) : (
               <>
                 <div className="justify-center flex text-6xl">
-                  <FiUploadCloud />
+                  <LuFilePlus2 />
                 </div>
                 <h3 className="text-center font-medium text-2xl">
                   Click, or drop your files here

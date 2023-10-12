@@ -1,4 +1,3 @@
-import { FiUploadCloud } from "react-icons/fi";
 import { LuFilePlus2, LuFileSymlink } from "react-icons/lu";
 import { MdClose } from "react-icons/md";
 import ReactDropzone from "react-dropzone";
@@ -25,7 +24,6 @@ import { Button } from "./ui/button";
 import loadFfmpeg from "@/utils/load-ffmpeg";
 import type { Action } from "@/types";
 import { FFmpeg } from "@ffmpeg/ffmpeg";
-import { AiOutlineFileAdd } from "react-icons/ai";
 
 export const extensions = {
   image: [

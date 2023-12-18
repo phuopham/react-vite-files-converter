@@ -1,6 +1,6 @@
 import Dropzone from "./components/dropzone"
 import Home from "./components/home"
-import Navbar from "./components/navbar"
+import { Navbar } from "./components/navbar"
 import { Toaster } from "./components/ui/toaster"
 
 function App() {
